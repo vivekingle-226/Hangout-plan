@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>A Little Question 💗</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Background -->
+
+    <div class="hearts">
+
+        <span>💗</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>💓</span>
+        <span>💗</span>
+        <span>💞</span>
+
+    </div>
+
+
+    <div class="sparkles">
+
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+
+    </div>
+
+
+    <!-- Tiny plush friends peeking around the invitation -->
+    <div
+        class="plush-friends"
+        aria-hidden="true"
+    >
+        <span>🧸</span>
+        <span>🐰</span>
+        <span>🎀</span>
+        <span>🧸</span>
+    </div>
+
+
+
+    <!-- ==========================
+         PAGE 1
+    =========================== -->
+
+    <section
+        class="page active"
+        id="page1"
+    >
+
+        <div
+            class="balloon-stickers"
+            aria-hidden="true"
+        >
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🐾</span>
+            <span>🐾</span>
+        </div>
+
+
+        <div class="card">
+
+            <div class="decoration">
+                ˚₊‧♡‧₊˚
+            </div>
+
+
+            <div class="big-heart">
+                💗
+            </div>
+
+
+            <h1>
+                Hey Divyaaaaa!...
+            </h1>
+
+
+            <p class="subtitle">
+                I have a tiny question for you 👀
+            </p>
+
+
+            <div class="question">
+
+                <p>
+                    Would you like to
+                </p>
+
+                <h2>
+                    hang out with me?
+                </h2>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <button
+                    id="yesBtn"
+                    class="yes-btn"
+                >
+                    Yes 💕
+                </button>
+
+
+                <button
+                    id="noBtn"
+                    class="no-btn"
+                    type="button"
+                >
+                    No 🙃
+                </button>
+
+            </div>
+
+
+            <p
+                class="message"
+                id="page1Message"
+            >
+                No pressure... probably 👀
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         PAGE 2
+    =========================== -->
+
+    <section
+        class="page"
+        id="page2"
+    >
+
+        <div class="card">
+
+            <div class="decoration">
+                ˚₊‧♡‧₊˚
+            </div>
+
+
+            <div class="page-icon">
+                📅
+            </div>
+
+
+            <h1>
+                Pick a date 💗
+            </h1>
+
+
+            <p class="subtitle">
+                When should we make this little plan happen?
+            </p>
+
+
+            <div class="calendar">
+
+                <label for="datePicker">
+                    Choose a date
+                </label>
+
+
+                <input
+                    type="date"
+                    id="datePicker"
+                >
+
+
+                <p id="dateHint">
+                    Pick a day that works for you 🌸
+                </p>
+
+            </div>
+
+
+            <p class="quick-title">
+                Or pick a quick option
+            </p>
+
+
+            <div class="quick-options">
+
+                <button
+                    class="choice date-choice"
+                    data-date="Saturday"
+                >
+
+                    🌸
+                    <span>
+                        Saturday
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="choice date-choice"
+                    data-date="Sunday"
+                >
+
+                    🌷
+                    <span>
+                        Sunday
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Runaway NO -->
+
+            <button
+                id="dateNoBtn"
+                class="runaway-btn"
+                type="button"
+            >
+                Maybe no? 🙃
+            </button>
+
+
+            <div class="selected">
+
+                <span>
+                    Our day:
+                </span>
+
+                <strong id="selectedDate">
+                    Nothing yet 👀
+                </strong>
+
+            </div>
+
+
+            <button
+                id="dateNext"
+                class="next-btn"
+                disabled
+            >
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         PAGE 3
+    =========================== -->
+
+    <section
+        class="page"
+        id="page3"
+    >
+
+        <div class="card">
+
+            <div class="decoration">
+                ˚₊‧♡‧₊˚
+            </div>
+
+
+            <div class="page-icon">
+                📍
+            </div>
+
+
+            <h1>
+                Where should we go?
+            </h1>
+
+
+            <p class="subtitle">
+                You choose the place this time 👀
+            </p>
+
+
+            <div class="cards">
+
+
+                <button
+                    class="place-card"
+                    data-place="Barista cafe.. ☕"
+                >
+
+                    <span class="icon">
+                        ☕
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Barista cafe..
+                        </strong>
+
+                        <small>
+                            Coffee & conversations
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    class="place-card"
+                    data-place="Spider Man movie! 🎬"
+                >
+
+                    <span class="icon">
+                        🎬
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Spider Man movie!
+                        </strong>
+
+                        <small>
+                            Snacks + movie time
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    class="place-card"
+                    data-place="Sai Hills.. 🌸"
+                >
+
+                    <span class="icon">
+                        🌸
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Sai Hills..
+                        </strong>
+
+                        <small>
+                            Walk & talk
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    class="place-card"
+                    data-place="Prozone Mall 🛍️"
+                >
+
+                    <span class="icon">
+                        🛍️
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Prozone Mall
+                        </strong>
+
+                        <small>
+                            Explore & chill
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <div class="selected">
+
+                <span>
+                    Our place:
+                </span>
+
+                <strong id="selectedPlace">
+                    Nothing yet 👀
+                </strong>
+
+            </div>
+
+
+            <button
+                id="placeNext"
+                class="next-btn"
+                disabled
+            >
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         PAGE 4
+    =========================== -->
+
+    <section
+        class="page"
+        id="page4"
+    >
+
+        <div class="card">
+
+            <div class="decoration">
+                ˚₊‧♡‧₊˚
+            </div>
+
+
+            <div class="page-icon">
+                🍽️
+            </div>
+
+
+            <h1>
+                What should we eat?
+            </h1>
+
+
+            <p class="subtitle">
+                Because food is very important 😌
+            </p>
+
+
+            <div class="cards">
+
+
+                <button
+                    class="food-card"
+                    data-food="Pizza 🍕"
+                >
+
+                    <span class="icon">
+                        🍕
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Pizza
+                        </strong>
+
+                        <small>
+                            A very safe decision
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    class="food-card"
+                    data-food="Pasta 🍝"
+                >
+
+                    <span class="icon">
+                        🍝
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Pasta
+                        </strong>
+
+                        <small>
+                            Fancy enough ✨
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    class="food-card"
+                    data-food="Burger 🍔"
+                >
+
+                    <span class="icon">
+                        🍔
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Burger
+                        </strong>
+
+                        <small>
+                            No explanation needed
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    class="food-card"
+                    data-food="Dessert 🍰"
+                >
+
+                    <span class="icon">
+                        🍰
+                    </span>
+
+                    <span class="info">
+
+                        <strong>
+                            Dessert
+                        </strong>
+
+                        <small>
+                            Technically also food 👀
+                        </small>
+
+                    </span>
+
+                    <span class="heart">
+                        ♡
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <div class="selected">
+
+                <span>
+                    Our food:
+                </span>
+
+                <strong id="selectedFood">
+                    Nothing yet 👀
+                </strong>
+
+            </div>
+
+
+            <button
+                id="foodNext"
+                class="next-btn"
+                disabled
+            >
+                See our plan 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         PAGE 5
+    =========================== -->
+
+    <section
+        class="page"
+        id="page5"
+    >
+
+        <div class="card final-card">
+
+            <div class="decoration">
+                ˚₊‧♡‧₊˚
+            </div>
+
+
+            <div class="final-heart">
+                💗
+            </div>
+
+
+            <h1>
+                It's a Hangout! 🥰
+            </h1>
+
+
+            <p class="subtitle">
+                Here's our little plan...
+            </p>
+
+
+            <div class="plan">
+
+
+                <div class="plan-item">
+
+                    <span>
+                        📅
+                    </span>
+
+                    <div>
+
+                        <small>
+                            DATE
+                        </small>
+
+                        <strong id="finalDate">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="plan-item">
+
+                    <span>
+                        📍
+                    </span>
+
+                    <div>
+
+                        <small>
+                            PLACE
+                        </small>
+
+                        <strong id="finalPlace">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="plan-item">
+
+                    <span>
+                        🍽️
+                    </span>
+
+                    <div>
+
+                        <small>
+                            FOOD
+                        </small>
+
+                        <strong id="finalFood">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="final-message">
+
+                <p>
+                    Looking forward to it 💗
+                </p>
+
+                <span>
+                    🧸 ✨ 💕 ✨ 🧸
+                </span>
+
+            </div>
+
+
+            <button
+                id="celebrateBtn"
+                class="yes-btn final-btn"
+            >
+                It's a Hangout! 💕
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Supabase browser client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Supabase browser client -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
